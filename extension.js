@@ -1,12 +1,8 @@
 const { Meta } = imports.gi;
 const Main = imports.ui.main;
 
-function hideDock() {
-    Main.overview.dash.hide();
-}
-
 function onOverviewActivated() {
-    hideDock();
+    Main.overview.dash.hide();
 }
 
 function onOverviewDeactivated() {
