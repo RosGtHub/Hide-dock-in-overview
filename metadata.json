@@ -1,0 +1,8 @@
+{
+  "name": "Hide the dock in overview",
+  "description": "hides the dock in overview mode",
+  "uuid": "hide-dock-in-overview@roslax",
+  "shell-version": [
+    "44"
+  ]
+}
