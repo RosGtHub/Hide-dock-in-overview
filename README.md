@@ -10,7 +10,7 @@
 
 git clone https://github.com/RosGtHub/Hide-dock-in-overview
 
-# move it to ~/.local/share/gnome-shell-extentions
+# move it to ~/.local/share/gnome-shell/extentions
 
 sudo mv /home/$USER/Hide-dock-in-overview ~/.local/share/gnome-shell/extentions
 ```
