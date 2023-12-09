@@ -4,8 +4,6 @@
 ![screenshot_6195](https://github.com/RosGtHub/Hide-dock-in-overview/assets/89165766/a5b113de-62ba-4ac1-bfee-609b14ae23f7)
 
 <h1>Installation</h1>
-<br>
-<br>
 
 ```
 # Clone the folder
