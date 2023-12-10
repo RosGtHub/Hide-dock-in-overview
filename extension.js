@@ -35,10 +35,4 @@ export default class DockExtension {
       this.hiddenSignalId = null;
     }
   }
-
-  static init() {
-    const extension = new DockExtension();
-    extension.enable();
-    return extension;
-  }
 }
