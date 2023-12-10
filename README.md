@@ -6,7 +6,7 @@
 <h1>Installation</h1>
 
 ```
-# Open the terminal and clone the folder
+# Open the terminal and clone the repository
 
 git clone https://github.com/RosGtHub/Hide-dock-in-overview
 
