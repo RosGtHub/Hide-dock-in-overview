@@ -1,11 +1,15 @@
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 
+let delay = 200;
+
 function onOverviewActivated() {
   Main.overview.dash.hide();
 }
 
 function onOverviewDeactivated() {
-  Main.overview.dash.show();
+  setTimeout(() => {
+    Main.overview.dash.show();
+  }, delay);
 }
 
 export default class DockExtension {
