@@ -1,15 +1,18 @@
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+import GLib from 'gi://GLib';
 
-let delay = 200;
+let delay = 0.2;
+let _sourceId;
 
 function onOverviewActivated() {
   Main.overview.dash.hide();
 }
 
 function onOverviewDeactivated() {
-  setTimeout(() => {
+    _sourceId = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, delay, () => {
     Main.overview.dash.show();
-  }, delay);
+    return GLib.SOURCE_CONTINUE;
+  });
 }
 
 export default class DockExtension {
@@ -37,6 +40,10 @@ export default class DockExtension {
     if (this.hiddenSignalId) {
       Main.overview.disconnect(this.hiddenSignalId);
       this.hiddenSignalId = null;
+    }
+    if (_sourceId) {
+      GLib.Source.remove(_sourceId);
+      _sourceId = null;
     }
   }
 }
