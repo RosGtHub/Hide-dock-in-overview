@@ -3,9 +3,9 @@
   "description": "hides the dock in overview mode",
   "name": "Hide the dock in overview",
   "shell-version": [
-    "45"
+    "46"
   ],
   "url": "https://github.com/RosGtHub/Hide-dock-in-overview",
   "uuid": "hide-dock-in-overview@roslax",
-  "version": 6
+  "version": 17
 }
